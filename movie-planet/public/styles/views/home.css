@@ -1,0 +1,67 @@
+.movie {
+  position: relative;
+  width: max-content;
+}
+
+.movie-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  padding: 5px 14px;
+  position: absolute;
+}
+
+.movie-tag-top {
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.movie-tag-bottom {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 30px;
+  background-color: rgb(255, 37, 37);
+}
+
+.movie-tag span {
+  color: rgb(255, 72, 72);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.movie-tag-bottom span {
+  color: white;
+  font-size: 1rem;
+}
+
+#trading-now,
+#movies-top {
+  margin: 20px;
+}
+
+#trading-now {
+  margin-top: 102px;
+}
+
+.movies {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  #trading-now {
+    margin-top: 132px;
+  }
+
+  .movies {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .movie {
+    width: 450px;
+  }
+}

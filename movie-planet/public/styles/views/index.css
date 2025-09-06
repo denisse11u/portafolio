@@ -1,0 +1,166 @@
+#hero {
+  background: linear-gradient(90deg, rgba(7, 7, 7, 0.95), rgba(10, 10, 10, 0.4)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/8d617e19-3c3c-4c28-8998-c9b14dbc7200/web/EC-en-20250901-TRIFECTA-perspective_27b047ba-b61d-4455-9987-101305f4618c_small.jpg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+#hero h2 {
+  max-width: 300px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#hero p {
+  margin: 0;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.register-form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Sections */
+#tranding-now,
+#more-reasons-to-join {
+  margin: 20px;
+}
+
+#tranding-now ol,
+#more-reasons-to-join ul {
+  width: 100%;
+}
+
+#tranding-now {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tranding-now h2 {
+  margin: 0;
+}
+
+#tranding-now ol {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.movie {
+  position: relative;
+  transition-duration: 200ms;
+}
+
+.movie img {
+  height: 300px;
+  width: 200px;
+}
+
+.movie:hover {
+  transform: scale(1.03);
+  transition-duration: 200ms;
+}
+
+.movie:active > .movie-number {
+  font-size: 4.5rem;
+}
+
+#more-reasons-to-join {
+  display: flex;
+}
+
+#more-reasons-to-join ul {
+  margin: 0;
+  list-style: none;
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reason {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(50, 50, 50, 0.15);
+  border: 1px solid rgba(61, 61, 61, 0.25);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.reason:hover {
+  background: rgba(50, 50, 50, 0.22);
+}
+
+.reason:hover > .reason-icon {
+  font-size: 3.5rem;
+  transform: rotate(-45deg);
+  transition-duration: 200ms;
+}
+
+.reason header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+
+.reason-icon {
+  font-size: 3rem;
+  align-self: end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  transition-duration: 200ms;
+}
+
+.reason-icon-blur {
+  filter: blur(60px);
+  font-size: 5rem;
+  right: 40px;
+  bottom: 40px;
+}
+
+.reason h3,
+.reason p {
+  margin: 0;
+}
+
+.reason p {
+  color: rgb(139, 139, 139);
+}
+
+@media screen and (max-width: 600px) {
+  .register-form-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #tranding-now ol li {
+    width: 100%;
+  }
+
+  .movie img {
+    width: 100%;
+  }
+}

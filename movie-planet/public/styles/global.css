@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General styles */
+*,
+*::before,
+*::after {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  color: white;
+}
+
+body {
+  background: linear-gradient(rgb(31, 14, 14), rgb(3, 3, 3));
+}
+
+/* Header and nav */
+
+.header {
+  position: absolute;
+  padding: 5px 15px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+#brand {
+  color: white;
+  text-decoration: none;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item-link {
+  text-decoration: none;
+}
+
+.nav-item-link:hover {
+  opacity: 0.8;
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  gap: 5px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer > * {
+  font-size: 0.9rem;
+  color: rgb(194, 194, 194);
+}
+
+.footer .created-by {
+  font-size: 0.7rem;
+}
+
+.footer .created-by-author {
+  font-weight: 500;
+  color: rgb(221, 221, 221);
+}
+
+/* Buttons */
+.btn {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+
+.btn-primary {
+  background-color: #c11119;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background-color: #292728;
+  color: white;
+  font-weight: 600;
+}
+
+/* Inputs */
+.input {
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.input-primary {
+  background: rgba(25, 25, 25, 0.6);
+  border: 1px solid rgba(54, 54, 54, 0.6);
+}
+
+/* Texts */
+p {
+  margin: 10px;
+}
+
+/* Movies */
+.movie-number {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  font-size: 4rem;
+  left: -10px;
+  color: black;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  font-weight: bold;
+  transition-duration: 200ms;
+}
+
+/* Utilities */
+.to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .header nav {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    padding: 0;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .movie {
+    width: 100%;
+  }
+}
